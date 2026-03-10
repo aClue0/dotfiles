@@ -1,0 +1,40 @@
+/*
+ * THEME: Cloud (One Dark-inspired)
+ *
+ * This is a color theme file used by waybar via style.css (@import).
+ * Each theme defines the same set of color variables so that style.css
+ * works without modification regardless of which theme is active.
+ *
+ * THEME SWITCHER (to be implemented):
+ * - Add more themes in this directory (e.g. catppuccin.css, gruvbox.css)
+ * - All themes must define the same variables below
+ * - A script can switch themes by symlinking/copying the chosen file to
+ *   ~/.config/waybar/colors/active.css and @import'ing that in style.css,
+ *   then reloading waybar
+ *
+ * AVAILABLE VARIABLES:
+ *   bg0-bg4   → background shades (darkest to lightest)
+ *   fg        → foreground / text
+ *   grey0-2   → muted text shades
+ *   red, orange, yellow, green, aqua, blue, purple → accent colors
+ */
+
+@define-color bg0 #282c34;
+@define-color bg1 #21252b;
+@define-color bg2 #2c313a;
+@define-color bg3 #3e4451;
+@define-color bg4 #4b5263;
+
+@define-color red #e06c75;
+@define-color orange #d19a66;
+@define-color yellow #e5c07b;
+@define-color green #98c379;
+@define-color aqua #56b6c2;
+@define-color blue #61afef;
+@define-color purple #c678dd;
+
+@define-color fg #abb2bf;
+
+@define-color grey0 #5c6370;
+@define-color grey1 #828997;
+@define-color grey2 #abb2bf;
