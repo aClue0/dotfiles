@@ -1,0 +1,130 @@
+@import 'colors/cloud.css';
+
+* {
+    border: none;
+    border-radius: 15px;
+    font-family: 'Adwaita Sans', 'JetBrainsMono Nerd Font Propo', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 0;
+    padding: 0px 7px;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+tooltip {
+    background: @bg0;
+    border: 1px solid @bg3;
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: @fg;
+    padding: 5px;
+}
+
+#workspaces {
+    background-color: @bg0;
+    padding: 5px 3px;
+    margin: 0 0 0 12px;
+    border-radius: 18px;
+    border: 1px solid @bg1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 50px;
+    background-color: @bg0;
+    color: white;
+}
+
+#workspaces button.active {
+    background-color: #f0a534;
+    color: @bg0;
+    min-width: 50px;
+    font-size: 13px;
+}
+
+#workspaces button:hover {
+    background-color: @purple;
+    color: @bg0;
+    border-radius: 16px;
+    min-width: 50px;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @bg0;
+    border-radius: 16px;
+    min-width: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#custom-notification {
+    background-color: @bg0;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 12px;
+    border-radius: 50px;
+    border: 1px solid @bg1;
+    color: @fg;
+}
+
+
+#custom-arch,
+#clock,
+#pulseaudio,
+#network,
+#language,
+#custom-power,
+#custom-github,
+#battery {
+    background-color: @bg0;
+    margin: 0px 3px;
+    padding: 0px 10px;
+}
+
+#custom-arch {
+    color: rgb(78, 162, 231);
+    font-size: 18;
+}
+
+#language {
+    color: rgb(189, 166, 166);
+}
+
+#clock {
+    color: #f0a534;
+}
+
+#clock.simpleclock {
+    padding: 0 12px;
+}
+
+#pulseaudio {
+    color: @yellow;
+}
+
+#custom-github {
+    color: antiquewhite;
+}
+
+#custom-github.urgent {
+    color: red;
+}
+
+#network {
+    color: rgb(134, 180, 226);
+}
+
+#battery {
+    color: @green;
+}
+
+#custom-power {
+    color: rgb(175, 72, 72);
+}
