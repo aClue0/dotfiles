@@ -82,6 +82,7 @@ tooltip label {
 #language,
 #custom-power,
 #custom-github,
+#custom-weather,
 #battery {
     background-color: @bg0;
     margin: 0px 3px;
@@ -127,4 +128,40 @@ tooltip label {
 
 #custom-power {
     color: rgb(175, 72, 72);
+}
+
+#custom-weather {
+    color: rgb(227, 217, 217);
+    font-size: 16px;
+}
+
+#custom-weather.severe {
+    color: #e37e65;
+}
+
+#custom-weather.sunnyDay {
+    color: #cab176;
+}
+
+#custom-weather.clearNight {
+    color: #187c7c;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+    color: #c2ddda;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+    color: #5aaca5;
+}
+
+#custom-weather.snowyIcyDay,
+#custom-weather.snowyIcyNight {
+    color: #d6e7e5;
+}
+
+#custom-weather.default {
+    color: #dbd9d8;
 }

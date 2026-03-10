@@ -8,7 +8,8 @@
   "modules-center": [
     "clock",
     "custom/github",
-    "custom/notification"
+    "custom/notification",
+    "custom/weather"
   ],
   "modules-right": [
     "network",
@@ -160,5 +161,12 @@
       "on-scroll": 1
     },
     "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
-  }
+  },
+  "custom/weather": {
+    "exec": "python ~/.config/waybar/scripts/weather.py",
+    "restart-interval": 400,
+    "return-type": "json",
+    "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
+    // "format-alt": "{alt}",
+  },
 }
