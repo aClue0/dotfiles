@@ -1,15 +1,15 @@
 {
-  "position": "top",
-  "margin-top": 15,
+  "position": "bottom",
+  "margin-bottom": 5,
+  "margin-top": 5,
   "modules-left": [
     "custom/arch",
     "hyprland/workspaces"
   ],
   "modules-center": [
     "clock",
-    "custom/github",
-    "custom/notification",
     "custom/weather"
+    // "custom/notification",
   ],
   "modules-right": [
     "network",
@@ -70,16 +70,9 @@
     "on-click": "hyprctl switchxkblayout current next"
   },
   "custom/arch": {
-    "format": "󰣇",
+    "format": "",
     "tooltip": true,
     "tooltip-format": "btw"
-  },
-  "custom/github": {
-    "format": "{} ",
-    "return-type": "json",
-    "interval": 60,
-    "exec": "$HOME/.config/waybar/github.sh",
-    "on-click": "xdg-open https://github.com/notifications"
   },
   "custom/power": {
     "tooltip": false,
@@ -144,7 +137,7 @@
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%H:%M}"
+    "format": " {:%I:%M %p}"
   },
   "clock": {
     "format": " {:L%a %d %b}",

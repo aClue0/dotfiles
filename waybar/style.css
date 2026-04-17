@@ -27,20 +27,19 @@ tooltip label {
 }
 
 #workspaces {
-    background-color: @bg0;
+    background-color: @bg3;
     padding: 5px 3px;
     margin: 0 0 0 12px;
     border-radius: 18px;
     border: 1px solid @bg1;
-    transition: background-color 0.3s ease-in-out;
 }
 
 #workspaces button {
     padding: 0px 6px;
     margin: 0px 3px;
     border-radius: 50px;
-    background-color: @bg0;
     color: white;
+    transition: all 0.2s ease-in;
 }
 
 #workspaces button.active {
@@ -51,9 +50,9 @@ tooltip label {
 }
 
 #workspaces button:hover {
-    background-color: @purple;
-    color: @bg0;
-    border-radius: 16px;
+    background-color: #f0a534;
+    color: @bg3;
+    border-radius: 50px;
     min-width: 50px;
 }
 
@@ -66,11 +65,10 @@ tooltip label {
 }
 
 #custom-notification {
-    background-color: @bg0;
-    padding: 0 15px 0 15px;
-    margin: 0 0 0 12px;
-    border-radius: 50px;
-    border: 1px solid @bg1;
+    background-color: @bg3;
+    padding: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
+    border-radius: 30px;
     color: @fg;
 }
 
@@ -81,10 +79,9 @@ tooltip label {
 #network,
 #language,
 #custom-power,
-#custom-github,
 #custom-weather,
 #battery {
-    background-color: @bg0;
+    background-color: @bg3;
     margin: 0px 3px;
     padding: 0px 10px;
 }
@@ -110,13 +107,7 @@ tooltip label {
     color: @yellow;
 }
 
-#custom-github {
-    color: antiquewhite;
-}
 
-#custom-github.urgent {
-    color: red;
-}
 
 #network {
     color: rgb(134, 180, 226);
