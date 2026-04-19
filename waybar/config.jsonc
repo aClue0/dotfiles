@@ -17,7 +17,7 @@
     "clock#simpleclock",
     "hyprland/language",
     "battery",
-    "custom/power"
+    "group/power"
   ],
   // All the modules
   "hyprland/workspaces": {
@@ -73,11 +73,6 @@
     "format": "",
     "tooltip": true,
     "tooltip-format": "btw"
-  },
-  "custom/power": {
-    "tooltip": false,
-    "on-click": "wlogout -p layer-shell &",
-    "format": "⏻"
   },
   "network": {
     "interface": "wlan0",
@@ -162,4 +157,47 @@
     "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
     // "format-alt": "{alt}",
   },
+
+  // Custom power button that acts as a drawer
+
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-power",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power",
+      "custom/lock",
+      "custom/suspend",
+      "custom/logout",
+      "custom/reboot"
+    ]
+  },
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "systemctl poweroff"
+  },
+  "custom/lock": {
+    "format": "󰌾",
+    "tooltip": false,
+    "on-click": "loginctl lock-session"
+  },
+  "custom/suspend": {
+    "format": "󰒲",
+    "tooltip": false,
+    "on-click": "systemctl suspend"
+  },
+  "custom/logout": {
+    "format": "󰍃",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch exit"
+  },
+  "custom/reboot": {
+    "format": "󰜉",
+    "tooltip": false,
+    "on-click": "systemctl reboot"
+  }
 }

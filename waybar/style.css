@@ -78,7 +78,7 @@ tooltip label {
 #pulseaudio,
 #network,
 #language,
-#custom-power,
+#group-power,
 #custom-weather,
 #battery {
     background-color: @bg3;
@@ -117,10 +117,6 @@ tooltip label {
     color: @green;
 }
 
-#custom-power {
-    color: rgb(175, 72, 72);
-}
-
 #custom-weather {
     color: rgb(227, 217, 217);
     font-size: 16px;
@@ -156,3 +152,39 @@ tooltip label {
 #custom-weather.default {
     color: #dbd9d8;
 }
+
+#custom-power,
+#custom-lock,
+#custom-suspend,
+#custom-logout,
+#custom-reboot {
+    padding: 0px 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    background-color: #313244;
+    color: #cdd6f4;
+    font-size: 16px;
+}
+
+/* The custom Power button CSS */
+
+/* Give the main power button a distinct color */
+#custom-power {
+    color: #f38ba8;
+}
+
+/* Hover effects for all buttons */
+#custom-power:hover,
+#custom-lock:hover,
+#custom-suspend:hover,
+#custom-logout:hover,
+#custom-reboot:hover {
+    background-color: #45475a;
+}
+
+/* Drawer styling */
+window#waybar drawer {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
