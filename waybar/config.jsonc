@@ -178,7 +178,7 @@
   "custom/power": {
     "format": "⏻",
     "tooltip": false,
-    "on-click": "systemctl poweroff"
+    "on-click": ".config/waybar/scripts/shutdown.sh"
   },
   "custom/lock": {
     "format": "󰌾",
@@ -193,7 +193,7 @@
   "custom/logout": {
     "format": "󰍃",
     "tooltip": false,
-    "on-click": "hyprctl dispatch exit"
+    "on-click": "~/.config/waybar/scripts/logout.sh"
   },
   "custom/reboot": {
     "format": "󰜉",
